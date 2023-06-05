@@ -1,0 +1,36 @@
+.form {
+  height: 15rem;
+  width: 20rem;
+  border: 1px solid;
+  margin-left: 1rem;
+}
+label {
+  margin-left: 1rem;
+}
+input {
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+.btn {
+  width: 22rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+p {
+  margin-left: 3rem;
+}
+table {
+  margin-top: 2rem;
+  margin-left: 5rem;
+}
+
+thead th {
+  background-color: #f0f0f0;
+  padding: 0.5rem;
+  gap: 2rem;
+}
+
+tbody td {
+  padding-left: 1rem;
+}
