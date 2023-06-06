@@ -4,8 +4,8 @@ import './StudentForm.css';
 const StudentForm = () => {
   const [studentData, setStudentData] = useState({
     name: '',
-    age: '',
-    grade: '',
+    email: '',
+    college: '',
     address: '',
   });
 
@@ -24,8 +24,8 @@ const StudentForm = () => {
     setSubmittedData((prevData) => [...prevData, studentData]);
     setStudentData({
       name: '',
-      age: '',
-      grade: '',
+      email: '',
+      college: '',
       address: '',
     });
   };
@@ -45,21 +45,21 @@ const StudentForm = () => {
           </label>
           <br />
           <label>
-            Age:
+            Email:
             <input
-              type="number"
-              name="age"
-              value={studentData.age}
+              type="text"
+              name="email"
+              value={studentData.email}
               onChange={handleChange}
             />
           </label>
           <br />
           <label>
-            Grade:
+            College:
             <input
               type="text"
-              name="grade"
-              value={studentData.grade}
+              name="college"
+              value={studentData.college}
               onChange={handleChange}
             />
           </label>
@@ -85,8 +85,8 @@ const StudentForm = () => {
           <thead>
             <tr>
               <th>Name</th>
-              <th>Age</th>
-              <th>Grade</th>
+              <th>email</th>
+              <th>college</th>
               <th>Address</th>
             </tr>
           </thead>
@@ -94,8 +94,8 @@ const StudentForm = () => {
             {submittedData.map((data, index) => (
               <tr key={index}>
                 <td>{data.name}</td>
-                <td>{data.age}</td>
-                <td>{data.grade}</td>
+                <td>{data.email}</td>
+                <td>{data.college}</td>
                 <td>{data.address}</td>
               </tr>
             ))}
